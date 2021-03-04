@@ -13,6 +13,8 @@ int main(int ac, char **av)
         return (84);
     if (my_str_isnum(av[1]) == 0)
         return (84);
+    if (my_strlen(0, av[1], '\0') < 1)
+        return (84);
     luhn(av[1]);
     return (0);
 }
