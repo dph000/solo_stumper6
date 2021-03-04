@@ -8,8 +8,9 @@
 #ifndef LUHN_H
 #define LUHN_H
 
-#include "../lib/include/clib.h"
-
 void luhn(char *);
+int my_str_isnum(char *);
+int my_strlen(int, char *, char);
+void my_putstr(char const *str);
 
 #endif /* !LUHN_H */

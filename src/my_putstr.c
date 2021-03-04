@@ -5,9 +5,14 @@
 ** some dsc
 */
 
-void my_putchar(char c);
+#include <unistd.h>
 
-int my_putstr(char const *str)
+void my_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+void my_putstr(char const *str)
 {
     int i = 0;
     char n;
@@ -17,5 +22,4 @@ int my_putstr(char const *str)
         my_putchar(n);
         i++;
     }
-    return (0);
 }

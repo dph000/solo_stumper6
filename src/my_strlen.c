@@ -5,8 +5,6 @@
 ** check string length
 */
 
-#include "../include/clib.h"
-
 int my_strlen(int n, char const *str, char const ch)
 {
     int i = n;
